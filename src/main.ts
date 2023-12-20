@@ -1,6 +1,7 @@
 import { Contacts } from '@capacitor-community/contacts';
 import { DeepClient } from "@deep-foundation/deeplinks/imports/client";
 
+export const CAPACITOR_CONTACT_PACKAGE_NAME = "@deep-foundation/capacitor-contact";
 
 export async function saveAllContacts({ deep, deviceLinkId }: { deep: DeepClient, deviceLinkId: any }) {
 
