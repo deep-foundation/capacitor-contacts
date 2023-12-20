@@ -1,5 +1,5 @@
 
-export {checkPermissions} from './check-permissions.js'
+export {checkPermissions} from './checkPermissions.js'
 export {requestPermissions} from './requestPermissions.js'
 
 
