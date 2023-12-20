@@ -4,7 +4,12 @@ import { DeepClient, SerialOperation } from "@deep-foundation/deeplinks/imports/
 
 
 
-export async function saveAllContacts({ deep, containerLinkId }: { deep: DeepClient; containerLinkId: number; }) {
+export interface SaveAllContactsOptions {
+  deep: DeepClient;
+  containerLinkId: number;
+}
+
+export async function saveAllContacts({ deep, containerLinkId }: SaveAllContactsOptions) {
   const contactTypeLinkId = await deep.id("@deep-foundation/capacitor-contact", "Contact");
   const containTypeLinkId = await deep.id("@deep-foundation/core", "Contain");
 
