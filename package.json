@@ -1,7 +1,9 @@
 {
   "name": "@deep-foundation/capacitor-contact",
-  "keywords": ["deep-package"],
-  "version": "0.0.1-dev.1",
+  "keywords": [
+    "deep-package"
+  ],
+  "version": "0.0.3-dev.1",
   "description": "<DESCRIPTION>",
   "repository": {
     "type": "git",
