@@ -1,0 +1,70 @@
+{
+  "package": {
+    "name": "@deep-foundation/capacitor-contact",
+    "version": "0.0.3-dev.0"
+  },
+  "data": [
+    {
+      "package": {
+        "dependencyId": 0,
+        "containValue": "Type"
+      },
+      "id": 1
+    },
+    {
+      "package": {
+        "dependencyId": 0,
+        "containValue": "Value"
+      },
+      "id": 2
+    },
+    {
+      "package": {
+        "dependencyId": 0,
+        "containValue": "Object"
+      },
+      "id": 3
+    },
+    {
+      "package": {
+        "dependencyId": 0,
+        "containValue": "HandleUpdate"
+      },
+      "id": 4
+    },
+    {
+      "package": {
+        "dependencyId": 1,
+        "containValue": "updateHandler"
+      },
+      "id": 5
+    },
+    {
+      "id": "Contact",
+      "type": 1
+    },
+    {
+      "id": "contactValue",
+      "type": 2,
+      "from": "Contact",
+      "to": 3
+    },
+    {
+      "id": "handleContactUpdate",
+      "type": 4,
+      "from": "Contact",
+      "to": 5
+    }
+  ],
+  "errors": [],
+  "dependencies": [
+    {
+      "name": "@deep-foundation/core",
+      "version": "0.0.2"
+    },
+    {
+      "name": "@deep-foundation/object-to-links-async-converter",
+      "version": "0.0.1-dev.5"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "@deep-foundation/capacitor-contact",
-  "keywords": [],
+  "keywords": ["deep-package"],
   "version": "0.0.1-dev.1",
   "description": "<DESCRIPTION>",
   "repository": {
@@ -24,24 +24,8 @@
     "./deep.json"
   ],
   "dependencies": {
-    "@deep-foundation/core": "^0.0.2"
-  },
-  "devDependencies": {
-    "@atao60/fse-cli": "^0.1.7",
-    "@capacitor/cli": "^5.0.0",
-    "@deep-foundation/npm-automation": "^18.1.11",
-    "@types/debug": "^4.1.8",
-    "@types/deep-equal": "^1.0.2",
-    "@types/fs-extra": "^11.0.1",
-    "@types/node": "^20.2.4",
-    "execa": "^7.1.1",
-    "fs-extra": "^11.1.1",
-    "replace-in-file": "^7.0.1",
-    "typescript": "5.0.4"
-  },
-  "peerDependencies": {
-    "@capacitor-community/contacts": "^5.0.4",
-    "@deep-foundation/deeplinks": "~0.0.302",
+    "@deep-foundation/object-to-links-async-converter": "~0.0.1-dev.5",
+    "@deep-foundation/core": "~0.0.2",
     "react": "^18.2.0"
   }
 }
