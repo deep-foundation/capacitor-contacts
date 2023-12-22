@@ -31,6 +31,7 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
+    "@deep-foundation/npm-automation": "^18.1.11",
     "tsx": "^4.7.0"
   }
 }
