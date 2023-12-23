@@ -7,7 +7,7 @@
   "description": "<DESCRIPTION>",
   "repository": {
     "type": "git",
-    "url": "<REPOSITORY_URL>"
+    "url": "https://github.com/deep-foundation/capacitor-contacts"
   },
   "type": "module",
   "scripts": {
