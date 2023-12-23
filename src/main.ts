@@ -2,6 +2,7 @@ export {WithContactsSync,WithContactsSyncOptions} from './react/components/with-
 export {UsePermissionsStatusResult, UsePermissionsStatusResult as  UseContactsPermissionsStatusResult,usePermissionsStatus, usePermissionsStatus as useContactsPermissionsStatus} from './react/hooks/use-contacts-permissions.js'
 export {UseContactsSyncOptions,useContactsSync} from './react/hooks/use-contacts-sync.js'
 export {checkPermissions, checkPermissions as checkConctactsPermissions} from './checkPermissions.js'
+export {Contact} from './contact.js'
 export {requestPermissions, requestPermissions as requestContactsPermissions} from './requestPermissions.js'
 export {CAPACITOR_CONTACT_PACKAGE_NAME, CAPACITOR_CONTACT_PACKAGE_NAME as NAME, CAPACITOR_CONTACT_PACKAGE_NAME as PACKAGE_NAME} from './name.js'
 export {saveAllContacts,SaveAllContactsOptions} from './saveAllContacts.js'
