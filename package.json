@@ -32,6 +32,9 @@
   },
   "devDependencies": {
     "@deep-foundation/npm-automation": "^18.1.11",
-    "tsx": "^4.7.0"
+    "tsx": "^4.7.0",
+  },
+  "peerDependencies": {
+    "@capacitor-community/contacts": "^5.0.4"
   }
 }
