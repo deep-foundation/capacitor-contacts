@@ -1,5 +1,5 @@
 {
-  "name": "@deep-foundation/capacitor-contact",
+  "name": "@deep-foundation/capacitor-contacts",
   "keywords": [
     "deep-package"
   ],
@@ -7,7 +7,7 @@
   "description": "<DESCRIPTION>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/deep-foundation/capacitor-contacts"
+    "url": "https://github.com/deep-foundation/capacitor-contactss"
   },
   "type": "module",
   "scripts": {

@@ -1,5 +1,5 @@
-[![npm](https://img.shields.io/npm/v/@deep-foundation/capacitor-contact.svg)](https://www.npmjs.com/package/@deep-foundation/capacitor-contact) 
-[![Gitpod](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/deep-foundation/capacitor-contact) 
+[![npm](https://img.shields.io/npm/v/@deep-foundation/capacitor-contacts.svg)](https://www.npmjs.com/package/@deep-foundation/capacitor-contacts) 
+[![Gitpod](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/deep-foundation/capacitor-contacts) 
 [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label&color=purple)](https://discord.gg/deep-foundation)
 
 A deep package based on [`@capacitor/contact`](https://www.npmjs.com/package/@capacitor/contact) 
@@ -32,8 +32,8 @@ Note: You can use library of this package to do operations described above. Read
 
 The [`Contact`] link can have object value.  
 No one field is required. You can add any fields as you want.  Only the fields that are supported by this package will be represented as links   
-[Supported fields can be found in the `ContactInfo` interface](https://deep-foundation.github.io/capacitor-contact/types/ContactInfo.html)  
-[Example of Contact Object Value](https://deep-foundation.github.io/capacitor-contact/types/ContactInfo.html#md:contact-info-example)
+[Supported fields can be found in the `ContactInfo` interface](https://deep-foundation.github.io/capacitor-contacts/types/ContactInfo.html)  
+[Example of Contact Object Value](https://deep-foundation.github.io/capacitor-contacts/types/ContactInfo.html#md:contact-info-example)
 
 # Update Handling
 
@@ -43,5 +43,5 @@ No one field is required. You can add any fields as you want.  Only the fields t
 
 Feel free to contribute. Please fork the repository and submit a pull request for any bugs, improvements, or features.
 
-[`Contact`]: https://deep-foundation.github.io/capacitor-contact/classes/Package.html#Contact
-[Documentation]: https://deep-foundation.github.io/capacitor-contact/
+[`Contact`]: https://deep-foundation.github.io/capacitor-contacts/classes/Package.html#Contact
+[Documentation]: https://deep-foundation.github.io/capacitor-contacts/

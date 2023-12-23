@@ -10,7 +10,7 @@ export interface SaveAllContactsOptions {
 }
 
 export async function saveAllContacts({ deep, containerLinkId }: SaveAllContactsOptions) {
-  const contactTypeLinkId = await deep.id("@deep-foundation/capacitor-contact", "Contact");
+  const contactTypeLinkId = await deep.id("@deep-foundation/capacitor-contacts", "Contact");
   const containTypeLinkId = await deep.id("@deep-foundation/core", "Contain");
 
   const { contacts } = await Contacts.getContacts(
