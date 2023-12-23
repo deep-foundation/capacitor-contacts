@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "@deep-foundation/core": "~0.0.2",
-    "@deep-foundation/object-to-links-async-converter": "~0.0.1-dev.5",
+    "@deep-foundation/object-to-links-async-converter": "~0.0.1-dev.5"
   },
   "devDependencies": {
     "@deep-foundation/npm-automation": "^18.1.11",
