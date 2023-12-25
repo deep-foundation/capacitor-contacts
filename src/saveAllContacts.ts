@@ -1,5 +1,6 @@
 import { Contacts } from '@capacitor-community/contacts';
 import { DeepClient, SerialOperation } from "@deep-foundation/deeplinks/imports/client.js";
+import { packageLog } from './packageLog.js';
 
 
 
@@ -10,6 +11,7 @@ export interface SaveAllContactsOptions {
 }
 
 export async function saveAllContacts({ deep, containerLinkId }: SaveAllContactsOptions) {
+  const log = packageLog.extend(saveAllContacts.name)
   const contactTypeLinkId = await deep.id("@deep-foundation/capacitor-contacts", "Contact");
   const containTypeLinkId = await deep.id("@deep-foundation/core", "Contain");
 
@@ -27,6 +29,7 @@ export async function saveAllContacts({ deep, containerLinkId }: SaveAllContacts
         image: true,
       }
     });
+    log({contacts})
 
   const { data: existingContactLinks } = await deep.select({
     type_id: contactTypeLinkId,
@@ -42,6 +45,7 @@ export async function saveAllContacts({ deep, containerLinkId }: SaveAllContacts
       from_id: containerLinkId
     }
   });
+  log({existingContactLinks})
   const operations: Array<SerialOperation> = [];
   const updateOperations: SerialOperation[] = existingContactLinks.map(existingContactLink => {
     const contact = contacts.find(contact => contact.contactId === existingContactLink.value!.value.contactId);
@@ -56,8 +60,10 @@ export async function saveAllContacts({ deep, containerLinkId }: SaveAllContacts
       }
     };
   });
+  log({updateOperations})
   operations.push(...updateOperations);
   const newContacts = contacts.filter(contact => existingContactLinks.some(existingContactLink => existingContactLink.value!.value.contactId === contact.contactId));
+  log({newContacts})
   const insertOperation: SerialOperation = {
     type: 'insert',
     table: 'links',
@@ -76,8 +82,11 @@ export async function saveAllContacts({ deep, containerLinkId }: SaveAllContacts
       }
     }))
   };
+  log({insertOperation})
   operations.push(insertOperation);
-  return await deep.serial({
+  log({operations})
+  const serialResult = await deep.serial({
     operations
   });
+  log({serialResult}) 
 }
