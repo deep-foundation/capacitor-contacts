@@ -32,6 +32,7 @@ export function usePermissionsStatus(): UsePermissionsStatusResult {
 
     return () => {
       resumeListener.then((resumeListener) => resumeListener.remove());
+      emitter.off("permissionsChanged", permissionsChangedListener);
     };
   }, []);
 
