@@ -35,11 +35,11 @@ export async function saveAllContacts({ deep, containerLinkId }: SaveAllContacts
         value: {
           _eq: contact.contactId
         },
-        in: {
-          type_id: containTypeLinkId,
-          from_id: containerLinkId
-        }
       }))
+    },
+    in: {
+      type_id: containTypeLinkId,
+      from_id: containerLinkId
     }
   });
   const operations: Array<SerialOperation> = [];
