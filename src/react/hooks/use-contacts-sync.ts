@@ -5,6 +5,7 @@ import { DeepClient } from "@deep-foundation/deeplinks/imports/client.js"
 export function useContactsSync(options: UseContactsSyncOptions) {
   const {intervalInMs = 60*1000, deep, containerLinkId} = options
   useEffect(() => {
+    saveAllContacts({deep, containerLinkId})
     const interval = setInterval(() => {
       saveAllContacts({deep, containerLinkId})
     }, intervalInMs)
