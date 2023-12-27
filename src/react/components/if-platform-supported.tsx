@@ -8,6 +8,6 @@ export function IfPlatformSupported({ children,childrenIfNotSupported }: IfPlatf
 }
 
 export interface IfPlatformSupportedOptions {
-  children: JSX.Element,
+  children: JSX.Element | null,
   childrenIfNotSupported?: JSX.Element
 }
