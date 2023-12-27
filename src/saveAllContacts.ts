@@ -62,7 +62,7 @@ export async function saveAllContacts({ deep, containerLinkId }: SaveAllContacts
   });
   log({updateOperations})
   operations.push(...updateOperations);
-  const newContacts = contacts.filter(contact => existingContactLinks.some(existingContactLink => existingContactLink.value!.value.contactId === contact.contactId));
+  const newContacts = contacts.filter(contact => !existingContactLinks.find(existingContactLink => existingContactLink.value!.value.contactId === contact.contactId));
   log({newContacts})
   const insertOperation: SerialOperation = {
     type: 'insert',
