@@ -11,11 +11,18 @@ export function usePermissionStatus(): UsePermissionStatusResult {
     PermissionStatus | undefined
   >(undefined);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<unknown>(undefined);
 
   async function updatePermissionStatus () {
-    const permissionStatus = await checkPermissions();
-    setPermissionStatus(permissionStatus);
-    setIsLoading(false);
+    let permissionStatus: PermissionStatus;
+    try {
+      permissionStatus = await checkPermissions();
+      setPermissionStatus(permissionStatus);
+    } catch (error) {
+      setError(error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   useEffect(() => {
