@@ -1,6 +1,6 @@
 export {IfPlatformSupported, IfPlatformSupported as IfPlatformSupportedForContacts,IfPlatformSupportedOptions as IfPlatformSupportedForContactsOptions} from './react/components/if-platform-supported.js'
 export {WithContactsSync,WithContactsSyncOptions} from './react/components/with-contacts-sync.js'
-export {UsePermissionsStatusResult, UsePermissionsStatusResult as  UseContactsPermissionsStatusResult,usePermissionsStatus, usePermissionsStatus as useContactsPermissionsStatus} from './react/hooks/use-permissions-status.js'
+export {UsePermissionStatusResult, UsePermissionStatusResult as  UseContactsPermissionStatusResult,usePermissionStatus, usePermissionStatus as useContactsPermissionStatus} from './react/hooks/use-permissions-status.js'
 export {UseContactsSyncOptions,useContactsSync} from './react/hooks/use-contacts-sync.js'
 export {useIsPlatformSupported, useIsPlatformSupported as useIsPlatformSupportedForContacts} from './react/hooks/use-is-platform-supported.js'
 export {checkPermissions, checkPermissions as checkConctactsPermissions} from './checkPermissions.js'

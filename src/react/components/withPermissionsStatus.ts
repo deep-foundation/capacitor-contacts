@@ -1,4 +1,4 @@
-import { UsePermissionsStatusResult, usePermissionsStatus } from "../hooks/use-permissions-status.js";
+import { UsePermissionStatusResult, usePermissionStatus } from "../hooks/use-permissions-status.js";
 import {PermissionStatus} from './../../permissionStatus.js'
 
 export type WithPermissionStatusOptions = 
@@ -10,11 +10,11 @@ export type WithPermissionStatusOptions =
     renderIfPromptWithRationale: () => JSX.Element;
   }
  | {
-  render: (PermissionStatus: UsePermissionsStatusResult) => JSX.Element;
+  render: (PermissionStatus: UsePermissionStatusResult) => JSX.Element;
 }
 
-export function WithPermissionsStatus(options: WithPermissionStatusOptions) {
-  const permissionStatus = usePermissionsStatus();
+export function WithPermissionStatus(options: WithPermissionStatusOptions) {
+  const permissionStatus = usePermissionStatus();
 
   if('render' in options) {
     return options.render(permissionStatus);
