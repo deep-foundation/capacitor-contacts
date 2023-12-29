@@ -11,7 +11,7 @@ export function usePermissionStatus(): UsePermissionStatusResult {
     PermissionStatus | undefined
   >(undefined);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<unknown>(undefined);
+  const [error, setError] = useState<unknown|undefined>(undefined);
 
   async function updatePermissionStatus () {
     let permissionStatus: PermissionStatus;
@@ -46,12 +46,14 @@ export function usePermissionStatus(): UsePermissionStatusResult {
   return {
     permissionStatus: permissionStatus,
     isLoading,
-    updatePermissionStatus
+    updatePermissionStatus,
+    error
   };
 }
 
 export type UsePermissionStatusResult = {
   permissionStatus: PermissionStatus | undefined;
   isLoading: boolean;
-  updatePermissionStatus: () => void
+  updatePermissionStatus: () => void,
+  error?: unknown|undefined
 };
